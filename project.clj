@@ -74,7 +74,7 @@
                          :proguard-conf-path "build/proguard-minify.cfg"}}]}
 
   :android {;; Specify the path to the Android SDK directory.
-            ;; :sdk-path "/home/user/path/to/android-sdk/"
+            :sdk-path "/Users/stevechan/Library/Android/sdk"
 
             ;; Increase this value if dexer fails with OutOfMemoryException.
             ;;:dex-opts ["-JXmx4096M" "--incremental"]
