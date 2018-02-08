@@ -224,7 +224,7 @@
       [this]
     (if-not (.isAlive httpd) 
       (do
-        (toast "starting HTTPD server")
+        (toast (str "starting HTTPD server" bind-address ":" httpd-port))
         (log/i (str "starting HTTPD server: " bind-address ":" httpd-port))
         (.start httpd))
       (log/i "HTTPD server is already running..."))
